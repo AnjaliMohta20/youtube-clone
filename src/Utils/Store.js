@@ -1,9 +1,13 @@
 import { configureStore } from "@reduxjs/toolkit";
 import AppSlice from "./AppSlice";
+import SearchSlice from "./SearchSlice";
+import ChatSlice from "./ChatSlice";
 
 const Store = configureStore({
     reducer: {
-        app: AppSlice
+        app: AppSlice,
+        search: SearchSlice,
+        chat: ChatSlice
     }
 })
 
